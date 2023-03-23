@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 
 const urlApi = 'https://dummyjson.com/docs/products'
 
-function Promos(){
+export default function Promos(){
 
     const [promos, setPromos] = useState('');
 
