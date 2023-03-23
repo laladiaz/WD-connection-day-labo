@@ -1,17 +1,26 @@
 import React from 'react';
 
-import {getData} from '../service'
 import { useState, useEffect } from 'react'
+import { axiosGet } from "../service"
 
 const urlApi = 'https://dummyjson.com/docs/products'
 
 export default function Promos(){
 
-    const [promos, setPromos] = useState('');
+    const [promos, setPromos] = useState([]);
 
-    useEffect(
-        setPromos(getData(urlApi))
-        , [])
+    const promoData = ()=>{
+        fetch('https://dummyjson.com/products')
+.then(res => res.json())
+.then(setPromos);
+    } 
+
+    useEffect(() => {
+        promoData()
+        console.log(promos)
+
+    }, [])
+ 
 
     console.log(promos)
 
@@ -19,7 +28,7 @@ export default function Promos(){
         <>
             <h1>Promos</h1>
             <div>
-                {promos}
+                Promos
             </div>
         </>
     )

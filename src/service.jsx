@@ -1,9 +1,6 @@
-import axios from 'axios'
+import axios from 'axios';
 
-export function getData(link){
-    return axios
-                .get(link)
-                .then((response) => {
-                    return response.data
-                })
+export const axiosGet = (url) => {
+    return axios.get(url)
+    .then(res=> res)
 }
