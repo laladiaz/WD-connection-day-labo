@@ -1,0 +1,14 @@
+footer{
+    background-color: #FFFFFF ;
+    width: 100vw;
+    height: 5rem;
+}
+.footer-p{
+    color: black;
+    
+}
+.footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
