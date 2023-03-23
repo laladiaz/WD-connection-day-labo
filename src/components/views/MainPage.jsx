@@ -1,10 +1,12 @@
 import React from "react";
 
+import Promos from '../../components/Promos'
+
 const MainPage = () => {
     return(
-        <p>
-        hello world!
-        </p>
+        <>
+        <Promos/>
+        </>
     )
 }
 
