@@ -4,7 +4,7 @@ import search from "./assets/images/search.png"
 import React from "react"
 
 
-export const Header = () => {
+export default function Header  () {
     return (
       <div className= "head"> 
             <img src={logo} className="logo" alt="logo e-commerce" />
